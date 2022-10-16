@@ -9,11 +9,35 @@ namespace bariscodefx\phpdevserver {
 	use Symfony\Component\Process\Exception\ProcessFailedException;
 	use Symfony\Component\Process\Process;
 
-	$process = new Process(['php', '-S', '127.0.0.1:8080', '-t', dirname(__DIR__, 1) . "/www"]);
-	$process->start();
+	try {
 
-	foreach ($process as $type => $data) {
-	    echo PREFIX . " " . $data;
+
+
+
+		if ( !file_exists( "phpdevserver.config.yml" ) ) throw new \Exception('\'phpdevserver.config.yml\' file not found, are you sure about you are running in the project directory?');
+
+		$process = new Process(
+			[
+				'php',
+
+				'-S', @ConfigParser::get("ip") . ':' . @ConfigParser::get("port"),
+
+				'-t', dirname(__DIR__, 1) . "/www"
+			]
+		);
+		$process->start();
+
+		foreach ($process as $type => $data) {
+		    echo PREFIX . " " . $data;
+		}
+
+
+
+
+	} catch(\Throwable $e)
+	{
+		echo $e->getMessage() . PHP_EOL;
+		die();
 	}
 
 }
