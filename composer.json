@@ -13,5 +13,7 @@
             "email": "85716242+bariscodefxy@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/process": "^6.0"
+    }
 }
