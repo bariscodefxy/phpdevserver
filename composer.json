@@ -1,0 +1,17 @@
+{
+    "name": "bariscodefx/phpdevserver",
+    "description": "The PHP Development Server",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "bariscodefx\\phpdevserver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bariscodefxy",
+            "email": "85716242+bariscodefxy@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
