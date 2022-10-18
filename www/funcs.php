@@ -23,8 +23,6 @@ function route(string $uri = "")
 		{
 			include getcwd() . "/" . $file;
 		}
-	} else {
-		echo "lol";
 	}
 }
 
