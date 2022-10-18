@@ -3,5 +3,5 @@ The PHP Development Server
 
 # Planned Features
 
-- [ ] Hooking to your project
+- [x] Hooking to your project
 - [ ] Routing
