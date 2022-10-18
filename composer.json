@@ -15,7 +15,8 @@
     ],
     "require": {
         "symfony/process": "^6.0",
-        "symfony/yaml": "^6.0"
+        "symfony/yaml": "^6.0",
+        "symfony/filesystem": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "9.5"
