@@ -1,7 +1,7 @@
 # phpdevserver
 The PHP Development Server
 
-# Planned Features
+# Features
 
 - [x] Hooking to your project
-- [ ] Routing
+- [x] Routing

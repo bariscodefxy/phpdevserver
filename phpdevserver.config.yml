@@ -1,2 +1,3 @@
 ip: "127.0.0.1"
 port: 8080
+route: "index.php?page=$1" # /homepage ==> index.php?page=homepage

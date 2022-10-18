@@ -8,9 +8,10 @@ namespace bariscodefx\phpdevserver {
 
 		public static function get(string $name)
 		{
-			$file = Yaml::parseFile('phpdevserver.config.yml');
-			if(!$file[$name]) throw new \Exception("'$name' was not found on the config file.");
-			return $file[$name];
+			$file = Yaml::parseFile(getcwd() . '/phpdevserver.config.yml');
+			if(isset($file[$name]))
+				return $file[$name];
+			else return null;
 		}
 
 	}

@@ -27,7 +27,7 @@ namespace bariscodefx\phpdevserver {
 
 				'-t', dirname(__DIR__, 1) . "/www",
 
-				dirname(__DIR__, 1) . "/www/index.php"
+				dirname(__DIR__, 1) . "/www/router.php"
 			],
 			null,
 			null,
