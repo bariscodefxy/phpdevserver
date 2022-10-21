@@ -1,3 +1,4 @@
 #!/bin/sh
-php $(pwd)/phpdevserver.php
+BASEDIR=$(dirname "$0")
+php $BASEDIR/phpdevserver.php
 
